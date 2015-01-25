@@ -25,10 +25,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## cacheSolve function takes an object of the type returned by the makeCacheMatrix function
 ## (a list with the functions get, set, getinverse and setinverse)
-## and returns the inverse of the matrix
+## and returns the inverse of the matrix defined in those functions defining environment
 ## It checks if the inverse is already stored in the defining environment of the functions
-## defined in the object passed and..
-## If it is, it returns it. 
+## in the list passed and..
+## If it is stored, it returns it. 
 ## If it isn't, the function calculates it, returns it, and saves it to that environment
 
 cacheSolve <- function(x, ...) {
