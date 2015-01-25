@@ -1,5 +1,6 @@
-## The functions makeCacheMatrix and cacheSolve are used to store a matrix and their inverse in
-## and environment and create a
+## Functions makeCacheMatrix and cacheSolve create a list of 
+## functions, and their defining environment, to get and set a matrix 
+## and its inverse. Inverse is calculated only if it's not already stored in this environment
 
 ## makeCacheMatrix takes a matrix as an agument and returns a list of functions with the matrix 
 ## stored in their defining environment. 
